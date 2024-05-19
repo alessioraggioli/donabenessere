@@ -277,7 +277,8 @@
                                                             </div>
                                                         </div>
                                                         <div class="dona-widget dona-widget-row__column dona-cell col-xs-9 dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto"
-                                                            style="" data-widget="row.column" data-container="container"
+                                                            style="margin:0 auto; text-align: center;"
+                                                            data-widget="row.column" data-container="container"
                                                             data-spacing="aaaa" data-bg-position="left top">
 
                                                             <img src="img/logo.png" />
@@ -330,8 +331,7 @@
 
                                                             <div class="dona-widget dona-widget-menu dona-preset-default dona-align-right dona-align-center_mobile-h dona-spacing-top-small dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto"
                                                                 data-preset="default" data-widget="menu">
-                                                                <a class="dona-widget-menu-toggle-btn"><i
-                                                                        class="dona-widget-menu-toggle-btn-icon fa fa-bars"></i></a>
+
                                                                 <ul
                                                                     class="dona-widget-menu-list dona-widget-menu-list_horizontal">
                                                                     <li class="dona-widget-menu-item">
@@ -522,8 +522,7 @@
                                             <div class="dona-widget dona-widget-image dona-widget_with-deferred-content dona-preset-3  dona-spacing-top-medium dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto  "
                                                 data-widget="image">
                                                 <span class="dona-widget-image-link">
-                                                    <img data-src="/mt-demo/82700/82788/mt-content/uploads/2019/06/mt-1841-home-about.jpg"
-                                                        src="img/dona.png"
+                                                    <img src="img/dona.png"
                                                         class="dona-widget-image-picture dona-widget-deferred-content lazyloaded"
                                                         data-id="146" style="width:80%">
                                                 </span>
@@ -589,8 +588,8 @@
 
             <div class="dona-widget dona-widget-block dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto"
                 data-widget="block" data-spacing="aaaa"
-                style="background-image:url(/mt-demo/82700/82788/mt-content/uploads/2019/06/mt-1841-home-bg1.png);background-position:bottom;background-repeat:no-repeat;background-size:cover;"
-                data-bg-image="2019/06/mt-1841-home-bg1.png" data-bg-position="bottom">
+                style="background-position:bottom;background-repeat:no-repeat;background-size:cover;"
+                data-bg-position="bottom">
 
 
                 <div class="container-fluid">
@@ -631,7 +630,7 @@
 
 
 
-                                            <div id="wid_1561974481_eg30e3qsd"
+                                            <div
                                                 class="dona-widget dona-widget_interactive dona-widget-tabs  dona-spacing-top-medium dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto   dona-preset-2 dona-widget-tabs_type-horizontal dona-disabling_row-fixed set-row-gutter-0"
                                                 data-widget="tabs" data-preset="2">
                                                 <div class="dona-widget-tabs__wrapper">
@@ -664,26 +663,27 @@
                                                                 PERSONALIZZATE</span>
                                                         </div>
                                                     </div>
-                                                    <div id="wid_1561974481_eg30e3qsd__content"
+                                                    <div
                                                         class="dona-widget-tabs__items-wrapper">
-                                                        <div id="wid_1561974481_hte37m5di"
-                                                            data-parent-id="wid_1561974481_eg30e3qsd"
+                                                        <div @click="showDiete(0)"
+                                                            
                                                             class="dona-widget dona-widget-tabs__item dona-widget_with-content-editor"
                                                             data-widget="tabs.item">
                                                             <div class="dona-widget-tabs__header dona-widget-tabs__header_mobile dona-widget-tabs__header_opened"
                                                                 data-tab="wid_1561974481_hte37m5di">
                                                                 <span
                                                                     class="dona-widget-tabs__header-item dona-widget-tabs__header-icon">
-                                                                    <span class="fa fa-fw fa-medkit"
-                                                                        aria-hidden="true"></span>
+                                                                    <img src="img/visita.svg"
+                                                                        class="dona-widget-image-picture dona-widget-deferred-content lazyloaded"
+                                                                        data-id="154" title="" alt="">
                                                                 </span>
                                                                 <span
-                                                                    class="dona-widget-tabs__header-item dona-widget-tabs__header-title">MODERN
-                                                                    TECHNOLOGY</span>
+                                                                    class="dona-widget-tabs__header-item dona-widget-tabs__header-title">PRIMA
+                                                                    VISITA</span>
                                                             </div>
                                                             <div class="dona-widget__content-wrapper dona-widget-tabs__content-wrapper"
                                                                 style="display: block;">
-                                                                <div id="wid_1561974481_hte37m5di__content"
+                                                                <div
                                                                     class="dona-widget__content dona-widget-tabs__content">
                                                                     <div class="dona-widget dona-widget-spacer dona-preset-default dona-spacing-top-small dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto dona-visible-on_desktop"
                                                                         data-widget="spacer" data-preset="default"
@@ -745,242 +745,27 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div id="wid_1561974481_85wn4ntcr"
-                                                            data-parent-id="wid_1561974481_eg30e3qsd"
-                                                            class="dona-widget dona-widget-tabs__item dona-widget_with-content-editor dona-entertainment__playing_disabled dona-before-in-viewport_content-invisible"
-                                                            data-widget="tabs.item">
+                                                        <div class="dona-widget dona-widget-tabs__item dona-widget_with-content-editor dona-entertainment__playing_disabled dona-before-in-viewport_content-invisible"
+                                                            @click="showDiete(1)">
                                                             <div class="dona-widget-tabs__header dona-widget-tabs__header_mobile"
                                                                 data-tab="wid_1561974481_85wn4ntcr">
                                                                 <span
                                                                     class="dona-widget-tabs__header-item dona-widget-tabs__header-icon">
-                                                                    <span class="fa fa-fw fa-thumbs-up"
-                                                                        aria-hidden="true"></span>
+                                                                    <img src="img/dieta.svg"
+                                                                        class="dona-widget-image-picture dona-widget-deferred-content lazyloaded"
+                                                                        data-id="154" title="" alt="">
                                                                 </span>
                                                                 <span
-                                                                    class="dona-widget-tabs__header-item dona-widget-tabs__header-title">SUCCESS
-                                                                    OF TREATMENTS</span>
-                                                            </div>
-                                                            <div class="dona-widget__content-wrapper dona-widget-tabs__content-wrapper"
-                                                                style="display: none;">
-                                                                <div id="wid_1561974481_85wn4ntcr__content"
-                                                                    class="dona-widget__content dona-widget-tabs__content  dona-entertainment__animation_disabled">
-                                                                    <div class="dona-widget dona-widget-spacer dona-preset-default dona-spacing-top-small dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto dona-visible-on_desktop"
-                                                                        data-widget="spacer" data-preset="default"
-                                                                        data-spacing="saaa" data-visible-on="desktop">
-                                                                        <div class="dona-widget-spacer-block"
-                                                                            style="height:10px"></div>
-                                                                    </div>
-                                                                    <div class="dona-widget dona-widget-row row-gutter-0 dona-justify-content_center dona-bg-color5_5 dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto  "
-                                                                        data-grid-type="sm" data-widget="row"
-                                                                        data-visible-on="mobile-v" data-spacing="aaaa"
-                                                                        style="background-position:left top;">
-                                                                        <div class="container-fluid">
-                                                                            <div class="row" data-container="container">
-                                                                                <div class="dona-widget dona-widget-row__column dona-cell  col-sm-6 dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto"
-                                                                                    style="background-position:left top;"
-                                                                                    data-widget="row.column"
-                                                                                    data-container="container"
-                                                                                    data-spacing="aaaa">
-                                                                                    <div class="dona-widget dona-widget-image dona-widget_with-deferred-content dona-preset-default  dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto  "
-                                                                                        data-widget="image">
-                                                                                        <span
-                                                                                            class="dona-widget-image-link">
-                                                                                            <img data-src="/mt-demo/82700/82788/mt-content/uploads/2019/06/mt-1841-home-speciality2.jpg"
-                                                                                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0  '%3E%3C/svg%3E"
-                                                                                                class="dona-widget-image-picture dona-widget-deferred-content lazyload"
-                                                                                                data-id="157" title=""
-                                                                                                alt="">
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-
-                                                                                <div class="dona-widget dona-widget-row__column dona-cell  col-sm-6 dona-spacing-top-medium dona-spacing-right-auto dona-spacing-bottom-medium dona-spacing-left-auto"
-                                                                                    style="background-position:left top;"
-                                                                                    data-widget="row.column"
-                                                                                    data-container="container"
-                                                                                    data-spacing="mama">
-                                                                                    <div class="dona-widget dona-widget-text dona-preset-default  dona-spacing-top-auto dona-spacing-right-small dona-spacing-bottom-auto dona-spacing-left-small  "
-                                                                                        data-widget="text"
-                                                                                        data-preset="default"
-                                                                                        data-spacing="asas"
-                                                                                        data-visible-on="mobile-v"
-                                                                                        data-animation="">
-                                                                                        <div
-                                                                                            class="dona-widget-text-content dona-widget-text-editable">
-                                                                                            <h3
-                                                                                                class="dona-text_system_8">
-                                                                                                Certified Doctors &amp;
-                                                                                                Using Modern Technology
-                                                                                            </h3>
-                                                                                            <p class="dona-text_normal">
-                                                                                                &nbsp;</p>
-                                                                                            <p class="dona-text_normal">
-                                                                                                Borem ipsum dolor sit
-                                                                                                amet, conse ctetur
-                                                                                                adipper isicing elit,
-                                                                                                sed do eiusmod tempor
-                                                                                                incididunt ae ut labore
-                                                                                                et dolore magnae. It is
-                                                                                                a long established fact
-                                                                                                that a reader will be
-                                                                                                distracted by the
-                                                                                                readable content of a
-                                                                                                page when looking at its
-                                                                                                layout tempor
-                                                                                                incididunt.</p>
-                                                                                            <p
-                                                                                                class="dona-text_system_13">
-                                                                                                &nbsp;</p>
-                                                                                            <ul>
-                                                                                                <li
-                                                                                                    class="dona-text_system_13">
-                                                                                                    Annual &amp; Monthly
-                                                                                                    Report</li>
-                                                                                                <li
-                                                                                                    class="dona-text_system_13">
-                                                                                                    Exclusive Support
-                                                                                                    for permium member
-                                                                                                </li>
-                                                                                                <li
-                                                                                                    class="dona-text_system_13">
-                                                                                                    Discounts &amp;
-                                                                                                    Updates</li>
-                                                                                                <li
-                                                                                                    class="dona-text_system_13">
-                                                                                                    Permium member</li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                                    class="dona-widget-tabs__header-item dona-widget-tabs__header-title">DIETE
+                                                                    PERSONALIZZATE</span>
                                                             </div>
                                                         </div>
-                                                        <div id="wid_1561974481_ribjm3w93"
-                                                            data-parent-id="wid_1561974481_eg30e3qsd"
-                                                            class="dona-widget dona-widget-tabs__item dona-widget_with-content-editor dona-entertainment__playing_disabled dona-before-in-viewport_content-invisible"
-                                                            data-widget="tabs.item">
-                                                            <div class="dona-widget-tabs__header dona-widget-tabs__header_mobile"
-                                                                data-tab="wid_1561974481_ribjm3w93">
-                                                                <span
-                                                                    class="dona-widget-tabs__header-item dona-widget-tabs__header-icon">
-                                                                    <span class="fa fa-fw fa-certificate"
-                                                                        aria-hidden="true"></span>
-                                                                </span>
-                                                                <span
-                                                                    class="dona-widget-tabs__header-item dona-widget-tabs__header-title">CERTIFIED
-                                                                    DOCTORS</span>
-                                                            </div>
-                                                            <div class="dona-widget__content-wrapper dona-widget-tabs__content-wrapper"
-                                                                style="display: none;">
-                                                                <div id="wid_1561974481_ribjm3w93__content"
-                                                                    class="dona-widget__content dona-widget-tabs__content  dona-entertainment__animation_disabled">
-                                                                    <div class="dona-widget dona-widget-spacer dona-preset-default dona-spacing-top-small dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto dona-visible-on_desktop"
-                                                                        data-widget="spacer" data-preset="default"
-                                                                        data-spacing="saaa" data-visible-on="desktop">
-                                                                        <div class="dona-widget-spacer-block"
-                                                                            style="height:10px"></div>
-                                                                    </div>
-                                                                    <div class="dona-widget dona-widget-row row-gutter-0 dona-justify-content_center dona-bg-color5_5 dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto  "
-                                                                        data-grid-type="sm" data-widget="row"
-                                                                        data-visible-on="mobile-v" data-spacing="aaaa"
-                                                                        style="background-position:left top;">
-                                                                        <div class="container-fluid">
-                                                                            <div class="row" data-container="container">
-                                                                                <div class="dona-widget dona-widget-row__column dona-cell  col-sm-6 dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto"
-                                                                                    style="background-position:left top;"
-                                                                                    data-widget="row.column"
-                                                                                    data-container="container"
-                                                                                    data-spacing="aaaa">
-                                                                                    <div class="dona-widget dona-widget-image dona-widget_with-deferred-content dona-preset-default  dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto  "
-                                                                                        data-widget="image">
-                                                                                        <span
-                                                                                            class="dona-widget-image-link">
-                                                                                            <img data-src="/mt-demo/82700/82788/mt-content/uploads/2019/06/mt-1841-home-speciality3.jpg"
-                                                                                                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0  '%3E%3C/svg%3E"
-                                                                                                class="dona-widget-image-picture dona-widget-deferred-content lazyload"
-                                                                                                data-id="158" title=""
-                                                                                                alt="">
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
 
-                                                                                <div class="dona-widget dona-widget-row__column dona-cell  col-sm-6 dona-spacing-top-medium dona-spacing-right-auto dona-spacing-bottom-medium dona-spacing-left-auto"
-                                                                                    style="background-position:left top;"
-                                                                                    data-widget="row.column"
-                                                                                    data-container="container"
-                                                                                    data-spacing="mama">
-                                                                                    <div class="dona-widget dona-widget-text dona-preset-default  dona-spacing-top-auto dona-spacing-right-small dona-spacing-bottom-auto dona-spacing-left-small  "
-                                                                                        data-widget="text"
-                                                                                        data-preset="default"
-                                                                                        data-spacing="asas"
-                                                                                        data-visible-on="mobile-v"
-                                                                                        data-animation="">
-                                                                                        <div
-                                                                                            class="dona-widget-text-content dona-widget-text-editable">
-                                                                                            <h3
-                                                                                                class="dona-text_system_8">
-                                                                                                Certified Doctors &amp;
-                                                                                                Using Modern Technology
-                                                                                            </h3>
-                                                                                            <p class="dona-text_normal">
-                                                                                                &nbsp;</p>
-                                                                                            <p class="dona-text_normal">
-                                                                                                Borem ipsum dolor sit
-                                                                                                amet, conse ctetur
-                                                                                                adipper isicing elit,
-                                                                                                sed do eiusmod tempor
-                                                                                                incididunt ae ut labore
-                                                                                                et dolore magnae. It is
-                                                                                                a long established fact
-                                                                                                that a reader will be
-                                                                                                distracted by the
-                                                                                                readable content of a
-                                                                                                page when looking at its
-                                                                                                layout tempor
-                                                                                                incididunt.</p>
-                                                                                            <p
-                                                                                                class="dona-text_system_13">
-                                                                                                &nbsp;</p>
-                                                                                            <ul>
-                                                                                                <li
-                                                                                                    class="dona-text_system_13">
-                                                                                                    Annual &amp; Monthly
-                                                                                                    Report</li>
-                                                                                                <li
-                                                                                                    class="dona-text_system_13">
-                                                                                                    Exclusive Support
-                                                                                                    for permium member
-                                                                                                </li>
-                                                                                                <li
-                                                                                                    class="dona-text_system_13">
-                                                                                                    Discounts &amp;
-                                                                                                    Updates</li>
-                                                                                                <li
-                                                                                                    class="dona-text_system_13">
-                                                                                                    Permium member</li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
 
-
                                         </div>
-
-
 
                                     </div>
                                 </div>
@@ -1051,9 +836,8 @@
 
                                                 <div class="dona-widget dona-widget-row dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto"
                                                     data-grid-type="sm" data-widget="row" data-spacing="aaaa"
-                                                    style="background-image:url(/mt-demo/82700/82788/mt-content/uploads/2019/06/mt-1841-home-appointment-bg1.png);background-position:bottom;background-repeat:no-repeat;background-size:contain;"
-                                                    data-bg-position="bottom"
-                                                    data-bg-image="2019/06/mt-1841-home-appointment-bg1.png">
+                                                    style="background-position:bottom;background-repeat:no-repeat;background-size:contain;"
+                                                    data-bg-position="bottom">
 
 
                                                     <div class="container-fluid">
@@ -1474,7 +1258,7 @@
             </div>
 
             <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-            <div style="margin-top:50px" class="elfsight-app-46a6fff8-c61b-48f6-b73d-ceef57f072fc"
+            <div style="margin-top:50px; margin-bottom: 20px;" class="elfsight-app-46a6fff8-c61b-48f6-b73d-ceef57f072fc"
                 data-elfsight-app-lazy></div>
 
             <div class="dona-widget dona-widget-block dona-bg-color3_3 dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto"
@@ -1622,7 +1406,7 @@
                                                                 data-bg-position="left top">
 
 
-                                                                <div id="wid_1561714311_b714e7w1o"
+                                                                <div
                                                                     class="dona-widget dona-widget-social-links-extended dona-preset-default dona-align-right dona-align-left_mobile-h dona-spacing-top-small dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto  "
                                                                     data-widget="social_links_extended"
                                                                     data-preset="default">
