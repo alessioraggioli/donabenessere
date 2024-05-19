@@ -630,8 +630,7 @@
 
 
 
-                                            <div
-                                                class="dona-widget dona-widget_interactive dona-widget-tabs  dona-spacing-top-medium dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto   dona-preset-2 dona-widget-tabs_type-horizontal dona-disabling_row-fixed set-row-gutter-0"
+                                            <div class="dona-widget dona-widget_interactive dona-widget-tabs  dona-spacing-top-medium dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto   dona-preset-2 dona-widget-tabs_type-horizontal dona-disabling_row-fixed set-row-gutter-0"
                                                 data-widget="tabs" data-preset="2">
                                                 <div class="dona-widget-tabs__wrapper">
                                                     <div class="dona-widget-tabs__headers-wrapper dona-widget-tabs__headers-wrapper_icon-left dona-widget-tabs__headers-wrapper_headers-center"
@@ -663,10 +662,8 @@
                                                                 PERSONALIZZATE</span>
                                                         </div>
                                                     </div>
-                                                    <div
-                                                        class="dona-widget-tabs__items-wrapper">
+                                                    <div class="dona-widget-tabs__items-wrapper">
                                                         <div @click="showDiete(0)"
-                                                            
                                                             class="dona-widget dona-widget-tabs__item dona-widget_with-content-editor"
                                                             data-widget="tabs.item">
                                                             <div class="dona-widget-tabs__header dona-widget-tabs__header_mobile dona-widget-tabs__header_opened"
@@ -1406,8 +1403,7 @@
                                                                 data-bg-position="left top">
 
 
-                                                                <div
-                                                                    class="dona-widget dona-widget-social-links-extended dona-preset-default dona-align-right dona-align-left_mobile-h dona-spacing-top-small dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto  "
+                                                                <div class="dona-widget dona-widget-social-links-extended dona-preset-default dona-align-right dona-align-left_mobile-h dona-spacing-top-small dona-spacing-right-auto dona-spacing-bottom-auto dona-spacing-left-auto  "
                                                                     data-widget="social_links_extended"
                                                                     data-preset="default">
                                                                     <ul class="dona-widget-social-links-extended__list">
@@ -1664,7 +1660,10 @@
                 onMounted(() => {
                     setInterval(() => {
                         let div = document.querySelector(".eapps-widget a:last-child")
-                        div.remove()
+                        if (div) {
+                            div.remove()
+                            clearInterval()
+                        }
                     }, 1000);
                 })
 
