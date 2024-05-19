@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css.css">
 
     <script type="text/javascript" charset="UTF-8"
-        src="//cdn.cookie-script.com/s/52520536e6085d059ab345e6fd332aee.js"></script>
+        src="https://cdn.cookie-script.com/s/52520536e6085d059ab345e6fd332aee.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
@@ -46,6 +46,11 @@
         .eapps-widget {
             height: 250px !important;
         }
+        @media screen and (max-width: 500px) {
+        #topheader{
+            display: none;
+        }
+    }
     </style>
 
     <link rel="stylesheet"
@@ -69,7 +74,8 @@
                         <div class="dona-cell col-sm-12" data-container="container">
 
                             <div class="dona-widget dona-widget-row row-fixed dona-bg-color3_3 dona-spacing-top-auto dona-spacing-right-auto dona-spacing-bottom-small dona-spacing-left-auto"
-                                data-grid-type="sm" data-widget="row" data-spacing="aasa" style=""
+                                id="topheader"
+                            data-grid-type="sm" data-widget="row" data-spacing="aasa"
                                 data-bg-position="left top">
 
 
